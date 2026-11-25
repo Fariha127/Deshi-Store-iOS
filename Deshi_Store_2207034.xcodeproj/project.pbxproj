@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220BC18E30A5C5020095CFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220BC18D30A5C5020095CFC1 /* Assets.xcassets */; };
+		220BC19130A5C5020095CFC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220BC19030A5C5020095CFC1 /* Preview Assets.xcassets */; };
+		220BC19B30A5C5020095CFC1 /* Deshi_Store_2207034Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BC19A30A5C5020095CFC1 /* Deshi_Store_2207034Tests.swift */; };
+		220BC1A530A5C5020095CFC1 /* Deshi_Store_2207034UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BC1A430A5C5020095CFC1 /* Deshi_Store_2207034UITests.swift */; };
+		220BC1A730A5C5020095CFC1 /* Deshi_Store_2207034UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BC1A630A5C5020095CFC1 /* Deshi_Store_2207034UITestsLaunchTests.swift */; };
+		220BC1DB30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220BC1DA30A5CA3A0095CFC1 /* GoogleService-Info.plist */; };
+		220BC1DC30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220BC1DA30A5CA3A0095CFC1 /* GoogleService-Info.plist */; };
+		220BC1DD30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220BC1DA30A5CA3A0095CFC1 /* GoogleService-Info.plist */; };
+		2274E1F430B6E1C50093749A /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1C230B6E1C50093749A /* ProductsViewModel.swift */; };
+		2274E1F530B6E1C50093749A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1C330B6E1C50093749A /* AuthViewModel.swift */; };
+		2274E1F630B6E1C50093749A /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1C430B6E1C50093749A /* FavouritesViewModel.swift */; };
+		2274E1F730B6E1C50093749A /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1C530B6E1C50093749A /* ReviewsViewModel.swift */; };
+		2274E1F830B6E1C50093749A /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1C630B6E1C50093749A /* AdminViewModel.swift */; };
+		2274E1FB30B6E1C50093749A /* products_seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 2274E1CB30B6E1C50093749A /* products_seed.json */; };
+		2274E1FC30B6E1C50093749A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1CD30B6E1C50093749A /* RootView.swift */; };
+		2274E1FE30B6E1C50093749A /* DeshiStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1CF30B6E1C50093749A /* DeshiStoreApp.swift */; };
+		2274E1FF30B6E1C50093749A /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D130B6E1C50093749A /* ReviewService.swift */; };
+		2274E20030B6E1C50093749A /* SeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D230B6E1C50093749A /* SeedService.swift */; };
+		2274E20130B6E1C50093749A /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D330B6E1C50093749A /* ProductService.swift */; };
+		2274E20230B6E1C50093749A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D430B6E1C50093749A /* AuthService.swift */; };
+		2274E20330B6E1C50093749A /* FavouriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D530B6E1C50093749A /* FavouriteService.swift */; };
+		2274E20430B6E1C50093749A /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D730B6E1C50093749A /* ProductCategory.swift */; };
+		2274E20530B6E1C50093749A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D830B6E1C50093749A /* Review.swift */; };
+		2274E20630B6E1C50093749A /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1D930B6E1C50093749A /* AppUser.swift */; };
+		2274E20730B6E1C50093749A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1DA30B6E1C50093749A /* Product.swift */; };
+		2274E20830B6E1C50093749A /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1DB30B6E1C50093749A /* Favourite.swift */; };
+		2274E20930B6E1C50093749A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1DE30B6E1C50093749A /* HomeView.swift */; };
+		2274E20A30B6E1C50093749A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E030B6E1C50093749A /* SplashView.swift */; };
+		2274E20B30B6E1C50093749A /* AuthViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E130B6E1C50093749A /* AuthViews.swift */; };
+		2274E20C30B6E1C50093749A /* ProductFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E330B6E1C50093749A /* ProductFormView.swift */; };
+		2274E20D30B6E1C50093749A /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E430B6E1C50093749A /* AdminDashboardView.swift */; };
+		2274E20E30B6E1C50093749A /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E630B6E1C50093749A /* FavouritesView.swift */; };
+		2274E20F30B6E1C50093749A /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1E830B6E1C50093749A /* ProductDetailView.swift */; };
+		2274E21030B6E1C50093749A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1EA30B6E1C50093749A /* SearchView.swift */; };
+		2274E21130B6E1C50093749A /* CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1EC30B6E1C50093749A /* CommonViews.swift */; };
+		2274E21230B6E1C50093749A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1EE30B6E1C50093749A /* ProfileView.swift */; };
+		2274E21330B6E1C50093749A /* ReviewsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1F030B6E1C50093749A /* ReviewsViews.swift */; };
+		2274E21430B6E1C50093749A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1F230B6E1C50093749A /* Extensions.swift */; };
+		2274E21530B6E1C50093749A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1F330B6E1C50093749A /* Theme.swift */; };
+		2274E21830B6E91D0093749A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2274E21730B6E91D0093749A /* FirebaseAuth */; };
+		2274E21A30B6E9300093749A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2274E21930B6E9300093749A /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220BC19730A5C5020095CFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220BC17E30A5C5020095CFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220BC18530A5C5020095CFC1;
+			remoteInfo = Deshi_Store_2207034;
+		};
+		220BC1A130A5C5020095CFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220BC17E30A5C5020095CFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220BC18530A5C5020095CFC1;
+			remoteInfo = Deshi_Store_2207034;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220BC18630A5C5020095CFC1 /* Deshi_Store_2207034.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deshi_Store_2207034.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BC18D30A5C5020095CFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220BC19030A5C5020095CFC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		220BC19630A5C5020095CFC1 /* Deshi_Store_2207034Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Deshi_Store_2207034Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BC19A30A5C5020095CFC1 /* Deshi_Store_2207034Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deshi_Store_2207034Tests.swift; sourceTree = "<group>"; };
+		220BC1A030A5C5020095CFC1 /* Deshi_Store_2207034UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Deshi_Store_2207034UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BC1A430A5C5020095CFC1 /* Deshi_Store_2207034UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deshi_Store_2207034UITests.swift; sourceTree = "<group>"; };
+		220BC1A630A5C5020095CFC1 /* Deshi_Store_2207034UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deshi_Store_2207034UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		220BC1DA30A5CA3A0095CFC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		220BC1E430A5D0CC0095CFC1 /* firebase-ios-sdk-9.6.0-patched */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "firebase-ios-sdk-9.6.0-patched"; path = "../../Developer/firebase-ios-sdk-9.6.0-patched"; sourceTree = "<group>"; };
+		2274E1C230B6E1C50093749A /* ProductsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		2274E1C330B6E1C50093749A /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		2274E1C430B6E1C50093749A /* FavouritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		2274E1C530B6E1C50093749A /* ReviewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
+		2274E1C630B6E1C50093749A /* AdminViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		2274E1CB30B6E1C50093749A /* products_seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products_seed.json; sourceTree = "<group>"; };
+		2274E1CD30B6E1C50093749A /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2274E1CF30B6E1C50093749A /* DeshiStoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeshiStoreApp.swift; sourceTree = "<group>"; };
+		2274E1D130B6E1C50093749A /* ReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		2274E1D230B6E1C50093749A /* SeedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedService.swift; sourceTree = "<group>"; };
+		2274E1D330B6E1C50093749A /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		2274E1D430B6E1C50093749A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2274E1D530B6E1C50093749A /* FavouriteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteService.swift; sourceTree = "<group>"; };
+		2274E1D730B6E1C50093749A /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		2274E1D830B6E1C50093749A /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2274E1D930B6E1C50093749A /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		2274E1DA30B6E1C50093749A /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2274E1DB30B6E1C50093749A /* Favourite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		2274E1DE30B6E1C50093749A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2274E1E030B6E1C50093749A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2274E1E130B6E1C50093749A /* AuthViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViews.swift; sourceTree = "<group>"; };
+		2274E1E330B6E1C50093749A /* ProductFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFormView.swift; sourceTree = "<group>"; };
+		2274E1E430B6E1C50093749A /* AdminDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDashboardView.swift; sourceTree = "<group>"; };
+		2274E1E630B6E1C50093749A /* FavouritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		2274E1E830B6E1C50093749A /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		2274E1EA30B6E1C50093749A /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		2274E1EC30B6E1C50093749A /* CommonViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViews.swift; sourceTree = "<group>"; };
+		2274E1EE30B6E1C50093749A /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2274E1F030B6E1C50093749A /* ReviewsViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViews.swift; sourceTree = "<group>"; };
+		2274E1F230B6E1C50093749A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2274E1F330B6E1C50093749A /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220BC18330A5C5020095CFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2274E21830B6E91D0093749A /* FirebaseAuth in Frameworks */,
+				2274E21A30B6E9300093749A /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19330A5C5020095CFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19D30A5C5020095CFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220BC17D30A5C5020095CFC1 = {
+			isa = PBXGroup;
+			children = (
+				220BC1E330A5D0CC0095CFC1 /* Packages */,
+				220BC1DA30A5CA3A0095CFC1 /* GoogleService-Info.plist */,
+				220BC18830A5C5020095CFC1 /* Deshi_Store_2207034 */,
+				220BC19930A5C5020095CFC1 /* Deshi_Store_2207034Tests */,
+				220BC1A330A5C5020095CFC1 /* Deshi_Store_2207034UITests */,
+				220BC18730A5C5020095CFC1 /* Products */,
+				2274E21630B6E91D0093749A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		220BC18730A5C5020095CFC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220BC18630A5C5020095CFC1 /* Deshi_Store_2207034.app */,
+				220BC19630A5C5020095CFC1 /* Deshi_Store_2207034Tests.xctest */,
+				220BC1A030A5C5020095CFC1 /* Deshi_Store_2207034UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220BC18830A5C5020095CFC1 /* Deshi_Store_2207034 */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1CC30B6E1C50093749A /* App */,
+				2274E1D630B6E1C50093749A /* Models */,
+				2274E1C730B6E1C50093749A /* Resources */,
+				2274E1D030B6E1C50093749A /* Services */,
+				2274E1F130B6E1C50093749A /* Utilities */,
+				2274E1C130B6E1C50093749A /* ViewModels */,
+				2274E1DC30B6E1C50093749A /* Views */,
+				220BC18D30A5C5020095CFC1 /* Assets.xcassets */,
+				220BC18F30A5C5020095CFC1 /* Preview Content */,
+			);
+			path = Deshi_Store_2207034;
+			sourceTree = "<group>";
+		};
+		220BC18F30A5C5020095CFC1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				220BC19030A5C5020095CFC1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		220BC19930A5C5020095CFC1 /* Deshi_Store_2207034Tests */ = {
+			isa = PBXGroup;
+			children = (
+				220BC19A30A5C5020095CFC1 /* Deshi_Store_2207034Tests.swift */,
+			);
+			path = Deshi_Store_2207034Tests;
+			sourceTree = "<group>";
+		};
+		220BC1A330A5C5020095CFC1 /* Deshi_Store_2207034UITests */ = {
+			isa = PBXGroup;
+			children = (
+				220BC1A430A5C5020095CFC1 /* Deshi_Store_2207034UITests.swift */,
+				220BC1A630A5C5020095CFC1 /* Deshi_Store_2207034UITestsLaunchTests.swift */,
+			);
+			path = Deshi_Store_2207034UITests;
+			sourceTree = "<group>";
+		};
+		220BC1E330A5D0CC0095CFC1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				220BC1E430A5D0CC0095CFC1 /* firebase-ios-sdk-9.6.0-patched */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		2274E1C130B6E1C50093749A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1C230B6E1C50093749A /* ProductsViewModel.swift */,
+				2274E1C330B6E1C50093749A /* AuthViewModel.swift */,
+				2274E1C430B6E1C50093749A /* FavouritesViewModel.swift */,
+				2274E1C530B6E1C50093749A /* ReviewsViewModel.swift */,
+				2274E1C630B6E1C50093749A /* AdminViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2274E1C730B6E1C50093749A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1C830B6E1C50093749A /* App */,
+				2274E1CB30B6E1C50093749A /* products_seed.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2274E1C830B6E1C50093749A /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2274E1CC30B6E1C50093749A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1CD30B6E1C50093749A /* RootView.swift */,
+				2274E1CF30B6E1C50093749A /* DeshiStoreApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2274E1D030B6E1C50093749A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1D130B6E1C50093749A /* ReviewService.swift */,
+				2274E1D230B6E1C50093749A /* SeedService.swift */,
+				2274E1D330B6E1C50093749A /* ProductService.swift */,
+				2274E1D430B6E1C50093749A /* AuthService.swift */,
+				2274E1D530B6E1C50093749A /* FavouriteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2274E1D630B6E1C50093749A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1D730B6E1C50093749A /* ProductCategory.swift */,
+				2274E1D830B6E1C50093749A /* Review.swift */,
+				2274E1D930B6E1C50093749A /* AppUser.swift */,
+				2274E1DA30B6E1C50093749A /* Product.swift */,
+				2274E1DB30B6E1C50093749A /* Favourite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2274E1DC30B6E1C50093749A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1DD30B6E1C50093749A /* Home */,
+				2274E1DF30B6E1C50093749A /* Auth */,
+				2274E1E230B6E1C50093749A /* Admin */,
+				2274E1E530B6E1C50093749A /* Favourites */,
+				2274E1E730B6E1C50093749A /* Product */,
+				2274E1E930B6E1C50093749A /* Search */,
+				2274E1EB30B6E1C50093749A /* Components */,
+				2274E1ED30B6E1C50093749A /* Profile */,
+				2274E1EF30B6E1C50093749A /* Reviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2274E1DD30B6E1C50093749A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1DE30B6E1C50093749A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2274E1DF30B6E1C50093749A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1E030B6E1C50093749A /* SplashView.swift */,
+				2274E1E130B6E1C50093749A /* AuthViews.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2274E1E230B6E1C50093749A /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1E330B6E1C50093749A /* ProductFormView.swift */,
+				2274E1E430B6E1C50093749A /* AdminDashboardView.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		2274E1E530B6E1C50093749A /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1E630B6E1C50093749A /* FavouritesView.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		2274E1E730B6E1C50093749A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1E830B6E1C50093749A /* ProductDetailView.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		2274E1E930B6E1C50093749A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1EA30B6E1C50093749A /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2274E1EB30B6E1C50093749A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1EC30B6E1C50093749A /* CommonViews.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2274E1ED30B6E1C50093749A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1EE30B6E1C50093749A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2274E1EF30B6E1C50093749A /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1F030B6E1C50093749A /* ReviewsViews.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		2274E1F130B6E1C50093749A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2274E1F230B6E1C50093749A /* Extensions.swift */,
+				2274E1F330B6E1C50093749A /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2274E21630B6E91D0093749A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220BC18530A5C5020095CFC1 /* Deshi_Store_2207034 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BC1AA30A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034" */;
+			buildPhases = (
+				220BC18230A5C5020095CFC1 /* Sources */,
+				220BC18330A5C5020095CFC1 /* Frameworks */,
+				220BC18430A5C5020095CFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deshi_Store_2207034;
+			packageProductDependencies = (
+				2274E21730B6E91D0093749A /* FirebaseAuth */,
+				2274E21930B6E9300093749A /* FirebaseFirestore */,
+			);
+			productName = Deshi_Store_2207034;
+			productReference = 220BC18630A5C5020095CFC1 /* Deshi_Store_2207034.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220BC19530A5C5020095CFC1 /* Deshi_Store_2207034Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BC1AD30A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034Tests" */;
+			buildPhases = (
+				220BC19230A5C5020095CFC1 /* Sources */,
+				220BC19330A5C5020095CFC1 /* Frameworks */,
+				220BC19430A5C5020095CFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220BC19830A5C5020095CFC1 /* PBXTargetDependency */,
+			);
+			name = Deshi_Store_2207034Tests;
+			productName = Deshi_Store_2207034Tests;
+			productReference = 220BC19630A5C5020095CFC1 /* Deshi_Store_2207034Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		220BC19F30A5C5020095CFC1 /* Deshi_Store_2207034UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BC1B030A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034UITests" */;
+			buildPhases = (
+				220BC19C30A5C5020095CFC1 /* Sources */,
+				220BC19D30A5C5020095CFC1 /* Frameworks */,
+				220BC19E30A5C5020095CFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220BC1A230A5C5020095CFC1 /* PBXTargetDependency */,
+			);
+			name = Deshi_Store_2207034UITests;
+			productName = Deshi_Store_2207034UITests;
+			productReference = 220BC1A030A5C5020095CFC1 /* Deshi_Store_2207034UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220BC17E30A5C5020095CFC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					220BC18530A5C5020095CFC1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					220BC19530A5C5020095CFC1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 220BC18530A5C5020095CFC1;
+					};
+					220BC19F30A5C5020095CFC1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 220BC18530A5C5020095CFC1;
+					};
+				};
+			};
+			buildConfigurationList = 220BC18130A5C5020095CFC1 /* Build configuration list for PBXProject "Deshi_Store_2207034" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220BC17D30A5C5020095CFC1;
+			packageReferences = (
+			);
+			productRefGroup = 220BC18730A5C5020095CFC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220BC18530A5C5020095CFC1 /* Deshi_Store_2207034 */,
+				220BC19530A5C5020095CFC1 /* Deshi_Store_2207034Tests */,
+				220BC19F30A5C5020095CFC1 /* Deshi_Store_2207034UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220BC18430A5C5020095CFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BC1DB30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */,
+				220BC19130A5C5020095CFC1 /* Preview Assets.xcassets in Resources */,
+				2274E1FB30B6E1C50093749A /* products_seed.json in Resources */,
+				220BC18E30A5C5020095CFC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19430A5C5020095CFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BC1DC30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19E30A5C5020095CFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BC1DD30A5CA3B0095CFC1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220BC18230A5C5020095CFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2274E20830B6E1C50093749A /* Favourite.swift in Sources */,
+				2274E1FE30B6E1C50093749A /* DeshiStoreApp.swift in Sources */,
+				2274E1FC30B6E1C50093749A /* RootView.swift in Sources */,
+				2274E20030B6E1C50093749A /* SeedService.swift in Sources */,
+				2274E21330B6E1C50093749A /* ReviewsViews.swift in Sources */,
+				2274E20330B6E1C50093749A /* FavouriteService.swift in Sources */,
+				2274E1F530B6E1C50093749A /* AuthViewModel.swift in Sources */,
+				2274E1F830B6E1C50093749A /* AdminViewModel.swift in Sources */,
+				2274E20C30B6E1C50093749A /* ProductFormView.swift in Sources */,
+				2274E20130B6E1C50093749A /* ProductService.swift in Sources */,
+				2274E20630B6E1C50093749A /* AppUser.swift in Sources */,
+				2274E20230B6E1C50093749A /* AuthService.swift in Sources */,
+				2274E21230B6E1C50093749A /* ProfileView.swift in Sources */,
+				2274E20530B6E1C50093749A /* Review.swift in Sources */,
+				2274E20730B6E1C50093749A /* Product.swift in Sources */,
+				2274E20930B6E1C50093749A /* HomeView.swift in Sources */,
+				2274E21130B6E1C50093749A /* CommonViews.swift in Sources */,
+				2274E20B30B6E1C50093749A /* AuthViews.swift in Sources */,
+				2274E21430B6E1C50093749A /* Extensions.swift in Sources */,
+				2274E1F430B6E1C50093749A /* ProductsViewModel.swift in Sources */,
+				2274E20430B6E1C50093749A /* ProductCategory.swift in Sources */,
+				2274E20E30B6E1C50093749A /* FavouritesView.swift in Sources */,
+				2274E21030B6E1C50093749A /* SearchView.swift in Sources */,
+				2274E1F730B6E1C50093749A /* ReviewsViewModel.swift in Sources */,
+				2274E21530B6E1C50093749A /* Theme.swift in Sources */,
+				2274E1FF30B6E1C50093749A /* ReviewService.swift in Sources */,
+				2274E1F630B6E1C50093749A /* FavouritesViewModel.swift in Sources */,
+				2274E20F30B6E1C50093749A /* ProductDetailView.swift in Sources */,
+				2274E20A30B6E1C50093749A /* SplashView.swift in Sources */,
+				2274E20D30B6E1C50093749A /* AdminDashboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19230A5C5020095CFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BC19B30A5C5020095CFC1 /* Deshi_Store_2207034Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220BC19C30A5C5020095CFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BC1A530A5C5020095CFC1 /* Deshi_Store_2207034UITests.swift in Sources */,
+				220BC1A730A5C5020095CFC1 /* Deshi_Store_2207034UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220BC19830A5C5020095CFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220BC18530A5C5020095CFC1 /* Deshi_Store_2207034 */;
+			targetProxy = 220BC19730A5C5020095CFC1 /* PBXContainerItemProxy */;
+		};
+		220BC1A230A5C5020095CFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220BC18530A5C5020095CFC1 /* Deshi_Store_2207034 */;
+			targetProxy = 220BC1A130A5C5020095CFC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		220BC1A830A5C5020095CFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220BC1A930A5C5020095CFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220BC1AB30A5C5020095CFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Deshi_Store_2207034/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220BC1AC30A5C5020095CFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Deshi_Store_2207034/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		220BC1AE30A5C5020095CFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deshi_Store_2207034.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deshi_Store_2207034";
+			};
+			name = Debug;
+		};
+		220BC1AF30A5C5020095CFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deshi_Store_2207034.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deshi_Store_2207034";
+			};
+			name = Release;
+		};
+		220BC1B130A5C5020095CFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deshi_Store_2207034;
+			};
+			name = Debug;
+		};
+		220BC1B230A5C5020095CFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uts.Deshi-Store-2207034UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deshi_Store_2207034;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220BC18130A5C5020095CFC1 /* Build configuration list for PBXProject "Deshi_Store_2207034" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BC1A830A5C5020095CFC1 /* Debug */,
+				220BC1A930A5C5020095CFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220BC1AA30A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BC1AB30A5C5020095CFC1 /* Debug */,
+				220BC1AC30A5C5020095CFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220BC1AD30A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BC1AE30A5C5020095CFC1 /* Debug */,
+				220BC1AF30A5C5020095CFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220BC1B030A5C5020095CFC1 /* Build configuration list for PBXNativeTarget "Deshi_Store_2207034UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BC1B130A5C5020095CFC1 /* Debug */,
+				220BC1B230A5C5020095CFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2274E21730B6E91D0093749A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAuth;
+		};
+		2274E21930B6E9300093749A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 220BC17E30A5C5020095CFC1 /* Project object */;
+}

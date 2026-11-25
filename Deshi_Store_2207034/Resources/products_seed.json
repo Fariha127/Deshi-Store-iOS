@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Dhakai Jamdani Saree",
+    "brand": "Aarong",
+    "category": "Textiles & Fashion",
+    "price": 8500,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A handwoven Jamdani saree from the Dhaka weaving tradition, recognised by UNESCO as an intangible cultural heritage. Features fine floral motifs woven directly into soft cotton.",
+    "imageURL": ""
+  },
+  {
+    "name": "Rajshahi Silk Saree",
+    "brand": "Aarong",
+    "category": "Textiles & Fashion",
+    "price": 6200,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A lightweight silk saree from the Rajshahi region, known for its smooth drape and rich natural sheen. Suitable for weddings and festive occasions.",
+    "imageURL": ""
+  },
+  {
+    "name": "Nakshi Kantha Throw",
+    "brand": "Aarong",
+    "category": "Handicrafts",
+    "price": 2200,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A traditional embroidered Nakshi Kantha throw, hand-stitched in layers of cotton with folk motifs. Works as a bed throw, sofa cover or wall hanging.",
+    "imageURL": ""
+  },
+  {
+    "name": "Handwoven Jute Tote Bag",
+    "brand": "Aarong",
+    "category": "Handicrafts",
+    "price": 850,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A durable, eco-friendly tote bag made from natural jute fibre, the golden fibre of Bangladesh. Reinforced handles and a cotton lining for everyday use.",
+    "imageURL": ""
+  },
+  {
+    "name": "Mirzapore Best Leaf Tea 400g",
+    "brand": "Ispahani",
+    "category": "Beverages",
+    "price": 380,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A popular black leaf tea blended from Bangladeshi tea estates in Sylhet and Chattogram. Produces a strong, bright and aromatic cup.",
+    "imageURL": ""
+  },
+  {
+    "name": "Frooto Mango Fruit Drink 1L",
+    "brand": "PRAN",
+    "category": "Beverages",
+    "price": 95,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A refreshing mango-flavoured fruit drink, best served chilled. A familiar summer favourite across Bangladesh.",
+    "imageURL": ""
+  },
+  {
+    "name": "Chilli Powder 200g",
+    "brand": "Radhuni",
+    "category": "Spices & Groceries",
+    "price": 130,
+    "countryOfOrigin": "Bangladesh",
+    "description": "Finely ground red chilli powder for curries, bhuna and marinades. Adds colour and a strong, even heat to everyday Bengali cooking.",
+    "imageURL": ""
+  },
+  {
+    "name": "Turmeric Powder 200g",
+    "brand": "Radhuni",
+    "category": "Spices & Groceries",
+    "price": 110,
+    "countryOfOrigin": "Bangladesh",
+    "description": "Pure ground turmeric (holud) with a deep golden colour. An essential spice for dal, fish and vegetable dishes.",
+    "imageURL": ""
+  },
+  {
+    "name": "Chinigura Aromatic Rice 1kg",
+    "brand": "PRAN",
+    "category": "Spices & Groceries",
+    "price": 190,
+    "countryOfOrigin": "Bangladesh",
+    "description": "Small-grain aromatic rice, traditionally used for polao, biryani and khichuri. Soft, fragrant and fluffy when cooked.",
+    "imageURL": ""
+  },
+  {
+    "name": "Soyabean Oil 5L",
+    "brand": "Teer",
+    "category": "Spices & Groceries",
+    "price": 880,
+    "countryOfOrigin": "Bangladesh",
+    "description": "Refined soyabean oil for everyday frying and cooking. Light in flavour and suitable for a wide range of dishes.",
+    "imageURL": ""
+  },
+  {
+    "name": "Chanachur 350g",
+    "brand": "Bombay Sweets",
+    "category": "Food & Snacks",
+    "price": 150,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A crunchy, spicy snack mix of fried lentils, peanuts and gram flour noodles. Often enjoyed with muri or alongside tea.",
+    "imageURL": ""
+  },
+  {
+    "name": "Energy Plus Biscuit",
+    "brand": "Olympic",
+    "category": "Food & Snacks",
+    "price": 30,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A light, crispy tea biscuit and a household name in Bangladesh. A handy snack for school, work or travel.",
+    "imageURL": ""
+  },
+  {
+    "name": "Beauty Soap",
+    "brand": "Keya",
+    "category": "Personal Care",
+    "price": 45,
+    "countryOfOrigin": "Bangladesh",
+    "description": "A mild fragrant beauty soap for daily bathing, from a long-established Bangladeshi personal care brand.",
+    "imageURL": ""
+  }
+]
