@@ -28,11 +28,37 @@ service cloud.firestore {
       match /favourites/{productId} {
         allow read, write: if signedIn() && request.auth.uid == userId;
       }
+
+      // One record per product the user recommends (doc ID = product ID).
+      match /recommendations/{productId} {
+        allow read: if signedIn() && request.auth.uid == userId;
+        allow create: if signedIn()
+          && request.auth.uid == userId
+          && request.resource.data.productId == productId;
+        allow delete: if signedIn() && request.auth.uid == userId;
+        allow update: if false;
+      }
     }
 
     match /products/{productId} {
       allow read: if true;
       allow create, delete: if isAdmin();
+
+      // A signed-in user may move recommendCount by exactly +1 or -1, and only
+      // together with creating or deleting THEIR OWN recommendation record.
+      function recommendUpdateOk() {
+        let recPath = /databases/$(database)/documents/users/$(request.auth.uid)/recommendations/$(productId);
+        let before = resource.data.get('recommendCount', 0);
+        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['recommendCount'])
+          && (
+            (request.resource.data.recommendCount == before + 1
+              && !exists(recPath) && existsAfter(recPath))
+            ||
+            (request.resource.data.recommendCount == before - 1
+              && request.resource.data.recommendCount >= 0
+              && exists(recPath) && !existsAfter(recPath))
+          );
+      }
 
       allow update: if isAdmin()
         || (signedIn()
@@ -40,7 +66,8 @@ service cloud.firestore {
                  .hasOnly(['averageRating', 'reviewCount'])
             && request.resource.data.averageRating >= 0
             && request.resource.data.averageRating <= 5
-            && request.resource.data.reviewCount >= 0);
+            && request.resource.data.reviewCount >= 0)
+        || (signedIn() && recommendUpdateOk());
 
       match /reviews/{reviewId} {
         allow read: if true;

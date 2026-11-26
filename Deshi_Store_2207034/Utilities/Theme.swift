@@ -7,6 +7,7 @@ enum Theme {
     static let background = Color(red: 0.97, green: 0.98, blue: 0.97)
     static let card = Color.white
     static let corner: CGFloat = 16
+    static let yellow = Color(red: 0.98, green: 0.76, blue: 0.0)
 }
 
 struct PrimaryButtonStyle: ButtonStyle {

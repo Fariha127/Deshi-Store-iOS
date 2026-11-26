@@ -38,6 +38,7 @@ struct ProductDetailView: View {
                     }
                     .buttonStyle(.plain)
                 }
+                RecommendButton(product: product)
 
                 infoCard
 

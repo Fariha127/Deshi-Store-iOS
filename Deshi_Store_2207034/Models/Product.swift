@@ -11,6 +11,7 @@ struct Product: Identifiable, Hashable, Codable {
     var imageURL: String
     var averageRating: Double
     var reviewCount: Int
+    var recommendCount: Int
 }
 
 extension Product {
@@ -28,6 +29,7 @@ extension Product {
         self.imageURL = data["imageURL"] as? String ?? ""
         self.averageRating = (data["averageRating"] as? NSNumber)?.doubleValue ?? 0
         self.reviewCount = (data["reviewCount"] as? NSNumber)?.intValue ?? 0
+        self.recommendCount = (data["recommendCount"] as? NSNumber)?.intValue ?? 0
     }
 }
 
@@ -87,6 +89,7 @@ struct ProductDraft: Codable {
             data["productId"] = productID
             data["averageRating"] = 0.0
             data["reviewCount"] = 0
+            data["recommendCount"] = 0
         }
         return data
     }

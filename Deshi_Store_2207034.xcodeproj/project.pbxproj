@@ -48,6 +48,10 @@
 		2274E21530B6E1C50093749A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274E1F330B6E1C50093749A /* Theme.swift */; };
 		2274E21830B6E91D0093749A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2274E21730B6E91D0093749A /* FirebaseAuth */; };
 		2274E21A30B6E9300093749A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2274E21930B6E9300093749A /* FirebaseFirestore */; };
+		22F7EA7C30B82CDD00A4CF48 /* FirestoreAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7EA7B30B82CDD00A4CF48 /* FirestoreAsync.swift */; };
+		22F7EA7E30B82CFF00A4CF48 /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7EA7D30B82CFF00A4CF48 /* RecommendationService.swift */; };
+		22F7EA8030B82D2700A4CF48 /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7EA7F30B82D2700A4CF48 /* RecommendationsViewModel.swift */; };
+		22F7EA8230B82D5B00A4CF48 /* RecommendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7EA8130B82D5B00A4CF48 /* RecommendButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,10 @@
 		2274E1F030B6E1C50093749A /* ReviewsViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViews.swift; sourceTree = "<group>"; };
 		2274E1F230B6E1C50093749A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2274E1F330B6E1C50093749A /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		22F7EA7B30B82CDD00A4CF48 /* FirestoreAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreAsync.swift; sourceTree = "<group>"; };
+		22F7EA7D30B82CFF00A4CF48 /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		22F7EA7F30B82D2700A4CF48 /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
+		22F7EA8130B82D5B00A4CF48 /* RecommendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +226,7 @@
 				2274E1C430B6E1C50093749A /* FavouritesViewModel.swift */,
 				2274E1C530B6E1C50093749A /* ReviewsViewModel.swift */,
 				2274E1C630B6E1C50093749A /* AdminViewModel.swift */,
+				22F7EA7F30B82D2700A4CF48 /* RecommendationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				2274E1D330B6E1C50093749A /* ProductService.swift */,
 				2274E1D430B6E1C50093749A /* AuthService.swift */,
 				2274E1D530B6E1C50093749A /* FavouriteService.swift */,
+				22F7EA7D30B82CFF00A4CF48 /* RecommendationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -341,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				2274E1EC30B6E1C50093749A /* CommonViews.swift */,
+				22F7EA8130B82D5B00A4CF48 /* RecommendButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -366,6 +377,7 @@
 			children = (
 				2274E1F230B6E1C50093749A /* Extensions.swift */,
 				2274E1F330B6E1C50093749A /* Theme.swift */,
+				22F7EA7B30B82CDD00A4CF48 /* FirestoreAsync.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -528,6 +540,8 @@
 				2274E20C30B6E1C50093749A /* ProductFormView.swift in Sources */,
 				2274E20130B6E1C50093749A /* ProductService.swift in Sources */,
 				2274E20630B6E1C50093749A /* AppUser.swift in Sources */,
+				22F7EA7C30B82CDD00A4CF48 /* FirestoreAsync.swift in Sources */,
+				22F7EA8230B82D5B00A4CF48 /* RecommendButton.swift in Sources */,
 				2274E20230B6E1C50093749A /* AuthService.swift in Sources */,
 				2274E21230B6E1C50093749A /* ProfileView.swift in Sources */,
 				2274E20530B6E1C50093749A /* Review.swift in Sources */,
@@ -539,11 +553,13 @@
 				2274E1F430B6E1C50093749A /* ProductsViewModel.swift in Sources */,
 				2274E20430B6E1C50093749A /* ProductCategory.swift in Sources */,
 				2274E20E30B6E1C50093749A /* FavouritesView.swift in Sources */,
+				22F7EA8030B82D2700A4CF48 /* RecommendationsViewModel.swift in Sources */,
 				2274E21030B6E1C50093749A /* SearchView.swift in Sources */,
 				2274E1F730B6E1C50093749A /* ReviewsViewModel.swift in Sources */,
 				2274E21530B6E1C50093749A /* Theme.swift in Sources */,
 				2274E1FF30B6E1C50093749A /* ReviewService.swift in Sources */,
 				2274E1F630B6E1C50093749A /* FavouritesViewModel.swift in Sources */,
+				22F7EA7E30B82CFF00A4CF48 /* RecommendationService.swift in Sources */,
 				2274E20F30B6E1C50093749A /* ProductDetailView.swift in Sources */,
 				2274E20A30B6E1C50093749A /* SplashView.swift in Sources */,
 				2274E20D30B6E1C50093749A /* AdminDashboardView.swift in Sources */,

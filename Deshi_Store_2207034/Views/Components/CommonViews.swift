@@ -146,6 +146,7 @@ struct FavouriteButton: View {
 
 struct ProductCard: View {
     let product: Product
+    @EnvironmentObject private var recommendations: RecommendationsViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -174,6 +175,13 @@ struct ProductCard: View {
                     .foregroundStyle(.secondary)
                 }
             }
+            HStack(spacing: 4) {
+                Image(systemName: recommendations.isRecommended(product.id) ? "hand.thumbsup.fill" : "hand.thumbsup")
+                    .foregroundStyle(Theme.yellow)
+                Text("\(product.recommendCount) recommended")
+            }
+            .font(.caption)
+            .foregroundStyle(.secondary)
         }
         .padding(10)
         .cardStyle()

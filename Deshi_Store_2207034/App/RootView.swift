@@ -4,6 +4,7 @@ struct RootView: View {
     @EnvironmentObject private var auth: AuthViewModel
     @EnvironmentObject private var products: ProductsViewModel
     @EnvironmentObject private var favourites: FavouritesViewModel
+    @EnvironmentObject private var recommendations: RecommendationsViewModel
     @State private var splashFinished = false
 
     var body: some View {
@@ -26,9 +27,11 @@ struct RootView: View {
             if let newID {
                 products.start()
                 favourites.start(userID: newID)
+                recommendations.start(userID: newID)
             } else {
                 products.stop()
                 favourites.stop()
+                recommendations.stop()
             }
         }
     }
@@ -36,6 +39,9 @@ struct RootView: View {
 
 struct MainTabView: View {
     @EnvironmentObject private var favourites: FavouritesViewModel
+    @EnvironmentObject private var recommendations: RecommendationsViewModel
+
+    private var alertMessage: String? { favourites.errorMessage ?? recommendations.errorMessage }
 
     var body: some View {
         TabView {
@@ -50,11 +56,11 @@ struct MainTabView: View {
                 .tabItem { Label("Profile", systemImage: "person.fill") }
         }
         .alert("Something went wrong",
-               isPresented: Binding(get: { favourites.errorMessage != nil },
-                                    set: { if !$0 { favourites.errorMessage = nil } })) {
+               isPresented: Binding(get: { alertMessage != nil },
+                                    set: { if !$0 { favourites.errorMessage = nil; recommendations.errorMessage = nil } })) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text(favourites.errorMessage ?? "")
+            Text(alertMessage ?? "")
         }
     }
 }
